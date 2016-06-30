@@ -2,10 +2,10 @@ Pod::Spec.new do |s|
 s.name = 'XMPPFramework'
 s.version = '3.6.7'
 
-s.osx.deployment_target = '10.7'
+s.osx.deployment_target = '10.8'
 s.ios.deployment_target = '6.0'
 
-s.osx.platform = :osx, '10.7'
+s.osx.platform = :osx, '10.8'
 s.ios.platform = :ios, '6.0'
 
 
@@ -55,7 +55,7 @@ s.subspec 'Core' do |core|
 }
   core.dependency 'CocoaLumberjack','~>2.0'
   core.dependency 'CocoaAsyncSocket','~>7.4.1'
-  core.ios.dependency 'KissXML/libxml_module', '~> 5.0.3'
+  core.dependency 'KissXML/libxml_module', :git => "https://github.com/calibraint/KissXML.git"
 end
 
 s.subspec 'BandwidthMonitor' do |ss|
